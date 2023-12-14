@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	margin: auto;
+	padding: 5px;
+	background-image: url("../img/back.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+body table, body tr, body td {
+	margin: auto;
+	transition: all 0.5s ease-out;
+}
+
+body input {
+	background-color: transparent;
+	border: white solid 1px;
+	border-radius: 5px;
+	width: 80%;
+	color: white;
+	box-shadow: 0 0 5px 1px #005766 inset;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+body input[type="file"] {
+	border: none;
+	box-shadow: none;
+	margin: 0 auto;
+	width: 50%;
+}
+
+body input:focus {
+	outline: 2px solid #800000;
+}
+
+body input::placeholder {
+	color: #AAAAAA;
+}
+
+button, input[type=file]::file-selector-button {
+	border: white solid 1px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: white;
+	text-shadow: 0px 0px 5px black;
+	font-size: 11pt;
+	background-color: transparent;
+	box-shadow: -1px -1px 2px 1px #005766 inset;
+	padding-top: 2px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 3px;
+	transition: all 0.5s ease-out;
+}
+
+button:hover, input[type=file]::file-selector-button:hover {
+	background-color: #3DB7CC;
+	box-shadow: 0 0 7px 1px gray inset;
+}
+
+button:active, input[type=file]::file-selector-button:active {
+	background-color: #005766;
+	box-shadow: 0 0 7px 1px gray inset;
+}
+
+body select {
+	color: white;
+	background-color: transparent;
+	border-color: white;
+	border-radius: 5px;
+	box-shadow: -1px -1px 2px 1px #005766 inset;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+body select option {
+	background-color: teal;
+}
+
+body a {
+	transition: all 0.5s ease-out;
+}
+
+body a:hover {
+	cursor: pointer;
+}

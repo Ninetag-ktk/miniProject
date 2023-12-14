@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+#headFrame {
+	text-align: center;
+	color: white;
+	width: 100%;
+	border: white solid 2px;
+	border-radius: 5px;
+	height: 200px;
+}
+
+#headFrame a {
+	font-size: 25pt;
+	color: white;
+	text-decoration: none;
+}
+
+#menuFrame {
+	height: 40px;
+	padding: 0;
+}
+
+.menuBar {
+	text-align: left;
+	margin-left: 0;
+	padding-top: 6px;
+}
+
+.menuBar td {
+	padding-left: 10px;
+}
+
+.menuBar img {
+	border: white solid 2px;
+	border-radius: 15px;
+	width: auto;
+	height: 100%;
+	max-height: 40px;
+	padding: 0.3em;
+	margin: 0;
+}
+
+#mainFrame {
+	color: white;
+	width: 100%;
+	height: 100%;
+}
+
+#mainFrame tr, #mainFrame td {
+	border: white solid 2px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#contentFrame {
+	background-color: rgb(0,0,0,0.6);
+	width: 80%;
+	padding-bottom: 30px;
+}
+
+#contentFrame table {
+	width: 100%;
+}
+
+#loginFrame {
+	height: 100px;
+	width: auto;
+}
+
+#loginFrame table {
+	width: 100%;
+}
+
+#loginFrame tr, #loginFrame td {
+	border: none;
+	text-align: center;
+}
+
+#loginFrame img {
+	object-fit: cover;
+}
+
+#loginFrame input {
+	width: 85%;
+}
+
+#loginFrame button {
+	width: 45%;
+	font-size: 10pt;
+}
+
+#sideBar {
+	height: 50%;
+	vertical-align: top;
+}
+
+#result {
+	font-size: large;
+	background-color: rgb(0, 0, 0, 0.7);
+	display: block;
+}

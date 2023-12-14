@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.koo.koominip.member.MemberMapper">
+	<delete id="withdraw" parameterType="com.koo.koominip.member.Member">
+	 	delete from koomini_memeber where m_id = #{m_id}
+	</delete>
+	<insert id="join" parameterType="com.koo.koominip.member.Member">
+		insert into koomini_memeber values(#{m_id}, #{m_pw}, #{m_name}, #{m_phone}, #{m_addr}, #{m_pic}, #{m_role})
+	</insert>
+	<select id="checkId" parameterType="com.koo.koominip.member.Member" resultType="com.koo.koominip.member.Member">
+		select * from koomini_memeber where m_id = #{m_id}
+	</select>
+	<update id="updateInfo" parameterType="com.koo.koominip.member.Member">
+		update koomini_memeber 
+		set m_pw = #{m_pw}, m_name = #{m_name}, m_phone = #{m_phone}, m_addr = #{m_addr}, m_pic = #{m_pic} 
+		where m_id = #{m_id}
+	</update>
+</mapper>
